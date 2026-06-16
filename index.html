@@ -185,6 +185,8 @@
   .test:nth-child(3) { animation-delay: 0.8s; }
   .test:nth-child(4) { animation-delay: 1.1s; }
   .test:nth-child(5) { animation-delay: 1.4s; }
+  .test:nth-child(6) { animation-delay: 1.7s; }
+  .test:nth-child(7) { animation-delay: 2.0s; }
   @keyframes pop { to { opacity: 1; transform: translateX(0); } }
 
   .runner-foot {
@@ -194,7 +196,7 @@
     color: var(--pass);
     font-size: 12.5px;
     opacity: 0;
-    animation: pop 0.5s ease 1.7s forwards;
+    animation: pop 0.5s ease 2.3s forwards;
   }
   .runner-foot .muted { color: var(--muted); }
 
@@ -467,6 +469,8 @@
         </div>
         <div class="runner-body">
           <div class="cmd"><span class="prompt">$</span> qa run --suite glovsky --coverage</div>
+          <div class="test"><span class="check">✓</span><span class="name">sportsbook-testing</span><span class="status">PASS</span></div>
+          <div class="test"><span class="check">✓</span><span class="name">regulatory-compliance</span><span class="status">PASS</span></div>
           <div class="test"><span class="check">✓</span><span class="name">firmware-validation</span><span class="status">PASS</span></div>
           <div class="test"><span class="check">✓</span><span class="name">api-automation</span><span class="status">PASS</span></div>
           <div class="test"><span class="check">✓</span><span class="name">system-integration</span><span class="status">PASS</span></div>
